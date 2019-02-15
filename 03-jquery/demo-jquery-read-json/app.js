@@ -24,7 +24,7 @@ Dog.prototype.render = function() {
 }
 
 Dog.readJson = () => {
-  $.get('data.json', 'json')
+  $.get('data/data.json', 'json')
     .then(data => {
       data.forEach(obj => {
         Dog.allDogs.push(new Dog(obj));
